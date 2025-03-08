@@ -1,0 +1,14 @@
+POST http://localhost:3000/api/files/upload
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary
+
+------WebKitFormBoundary
+Content-Disposition: form-data; name="file"; filename="archivo_prueba.txt"
+Content-Type: text/plain
+
+< ./archivo_prueba.txt
+------WebKitFormBoundary--
+GET http://localhost:3000/api/files/files
+
+GET http://localhost:3000/api/files/download/archivo_prueba.txt
+
+

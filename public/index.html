@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gestión de Archivos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center">Gestión de Archivos 📂</h1>
+
+        <!-- Formulario para subir archivos -->
+        <div class="card p-4 mt-4">
+            <input type="file" id="fileInput" class="form-control">
+            <button class="btn btn-primary mt-3 w-100" onclick="uploadFile()">Subir Archivo</button>
+        </div>
+
+        <!-- Lista de archivos -->
+        <div class="mt-5">
+            <h3>Archivos Subidos</h3>
+            <ul id="fileList" class="list-group mt-3"></ul>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
